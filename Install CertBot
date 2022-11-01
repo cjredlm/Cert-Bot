@@ -1,0 +1,14 @@
+********************* Install CertBot *****************************
+
+* Instalar Snap
+
+sudo snap install core; sudo snap refresh core
+
+
+* Instalar Cert-Bot
+
+sudo snap install --classic certbot
+sudo ln -s /snap/bin/certbot /usr/bin/certbot
+sudo certbot --nginx
+sudo certbot certonly --nginx
+
